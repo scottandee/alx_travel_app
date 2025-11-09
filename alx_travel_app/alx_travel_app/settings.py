@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 env = environ.Env()
-env.Env.read_env(os.path.join(BASE_DIR, ".env"))
+env.read_env(os.path.join(BASE_DIR, ".env"))
 
 SECRET_KEY = env('SECRET_KEY')
 
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Third-party services
-    'rest-framework',
+    'rest_framework',
     'corsheaders',
     'drf_yasg',
 
